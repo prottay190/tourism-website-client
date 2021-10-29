@@ -1,0 +1,15 @@
+.footer{
+    background: #17202A;
+    color: #fff;
+    margin-top: 90px;
+}
+.footer-text{
+    color: #767676;
+    font-size: 18px;
+    
+}
+.footer-content{
+    color: #767676;
+    font-size: 18px;
+    margin-top: 50px !important;
+}
