@@ -1,8 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './Pages/Home/Header/Header';
-import Footer from './Pages/Home/Footer/Footer';
+import AddServices from './Pages/AddService/AddServices';
+import Home from './Pages/Home/Home/Home';
+import Header from './Pages/Shared/Header/Header';
+import Footer from './Pages/Shared/Footer/Footer';
+import Details from './Pages/Details/Details';
+import Orders from './Pages/Orders/Orders';
+
+
 
 
 function App() {
@@ -13,7 +19,21 @@ function App() {
          <Header></Header>
        </Route>
        <Switch>
-     
+         <Route exact path="/">
+           <Home></Home>
+         </Route>
+         <Route path="/home">
+           <Home></Home>
+         </Route>
+         <Route path="/addServices">
+             <AddServices></AddServices>
+         </Route>
+         <Route path="/detail/:serviceId">
+             <Details></Details>
+         </Route>
+         <Route path="/order">
+           <Orders></Orders>
+         </Route>
        </Switch>
        <Route>
          <Footer></Footer>

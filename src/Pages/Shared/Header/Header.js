@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import Banner from '../Banner/Banner';
+
 
 const Header = () => {
     return (
@@ -11,15 +11,15 @@ const Header = () => {
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
             <Nav.Link  href="/home">Home</Nav.Link>
-            <Nav.Link  href="#services">Service</Nav.Link>
-            <Nav.Link href="#doctors">Doctors</Nav.Link> 
+            <Nav.Link  href="/addServices">Add-Service</Nav.Link>
+            <Nav.Link href="/order">Order</Nav.Link> 
             <Navbar.Text>
                Signed in as: <a href="#login">Mark Otto</a>
             </Navbar.Text>
             </Navbar.Collapse>
         </Container>
         </Navbar>
-        <Banner></Banner>
+        
         </>
     );
 };
