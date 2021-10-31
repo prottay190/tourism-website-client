@@ -20,6 +20,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/addServices">Add-Service</Nav.Link>
             <Nav.Link as={Link} to="/order"> MyOrder</Nav.Link>  
             <Nav.Link as={Link} to="/moreservice">Extra-Service</Nav.Link>  
+            <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>  
             {user.email ?
                 <Button onClick={logOut}>LogOut</Button> :
                 <Nav.Link href="/login">LogIn</Nav.Link>

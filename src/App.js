@@ -13,6 +13,7 @@ import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Shipping from './Pages/Shipping/Shipping';
 import MoreService from './Pages/MoreService/MoreService';
 import NotFound from './Pages/NotFound/NotFound';
+import Contact from './Pages/Contact/Contact';
 
 
 
@@ -49,6 +50,9 @@ function App() {
             </Route>
             <Route path="/moreservice">
               <MoreService></MoreService>
+            </Route>
+            <Route path="/contact">
+             <Contact></Contact>
             </Route>
             <Route path="*">
              <NotFound></NotFound>
