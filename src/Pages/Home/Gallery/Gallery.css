@@ -1,0 +1,11 @@
+.gallery-container{
+    background-color: #BFC9CA;
+    margin-top: 30px;
+}
+.gallery-container h2{
+    color: #1D8348;
+}
+.row-container img{
+    width: 320px;
+    height: 240px;
+}
