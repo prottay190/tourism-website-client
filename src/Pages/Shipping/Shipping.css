@@ -1,0 +1,12 @@
+.shipping-container{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #AAB7B8;
+   margin-top: 20px;
+}
+.from-container input {
+   width: 500px;
+  
+}

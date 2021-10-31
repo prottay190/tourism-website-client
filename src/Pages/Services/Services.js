@@ -12,7 +12,7 @@ const Services = () => {
     },[])
     return (
         <div className="container services-section">
-            <h2>Our Services</h2>
+            <h2 style={{color: '#F39C12', padding: '20px'}}>Our Services</h2>
             <div className="container">
             <Row xs={1} sm={1} md={2} lg={3} className="g-4">
                 {

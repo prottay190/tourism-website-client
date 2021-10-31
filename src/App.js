@@ -11,6 +11,8 @@ import SingIn from './Pages/SingIn/SingIn';
 import AuthProvider from './contaxt/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Shipping from './Pages/Shipping/Shipping';
+import MoreService from './Pages/MoreService/MoreService';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 
@@ -44,6 +46,12 @@ function App() {
             </Route>
             <Route path="/shipping">
               <Shipping></Shipping>
+            </Route>
+            <Route path="/moreservice">
+              <MoreService></MoreService>
+            </Route>
+            <Route path="*">
+             <NotFound></NotFound>
             </Route>
           </Switch>
           <Route>

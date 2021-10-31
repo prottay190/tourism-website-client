@@ -16,15 +16,15 @@ const AddServices = () => {
         })
     }
     return (
-        <div className="add-services">
-            <h2>Add services</h2>
+        <div className="add-services p-5">
+            <h2 style={{fontSize: '40px', fontWeight: 'bold', color: '#F4D03F', marginBottom: '20px'}}>Add services</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
             <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name"/>
             <input {...register("packages")} placeholder="Add Packages"/>
             <input {...register("img")} placeholder="Image URL"/>
             <textarea className="mb-2" {...register("description")} placeholder="Description"/> 
             <input type="number" {...register("price")} placeholder="Price"/>
-            <input type="submit" />
+            <input style={{fontSize: '20px'}} className='btn btn-danger' type="submit" />
             </form>
         </div>
     );

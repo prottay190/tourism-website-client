@@ -7,11 +7,10 @@ const SingIn = () => {
 
     
     return (
-        <div>
+        <div className="p-5 mt-4">
             <button 
             onClick={singInUsingGoogle} 
-            
-            className="btn btn-warning"><FaGoogle />  Google SingIn</button>
+            className="btn btn-warning"><FaGoogle />  Google SignIn</button>
         </div>
     );
 };

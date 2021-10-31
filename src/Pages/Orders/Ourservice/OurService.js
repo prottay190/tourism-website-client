@@ -30,8 +30,9 @@ const OurService = ({os}) => {
                <h2>Name: {name}</h2>
                <h5>Packages: {packages}</h5>
                <h3>Price: {price}</h3>
-               <button onClick={() => handleDelete(Service._id) }>Delete</button>
-               <Link to="/shipping"> <button>Order Now</button> </Link>
+               <button style={{marginRight: '10px', background: '#F39C12', padding: '8px 22px', color: '#fff', fontSize: '15px'}} onClick={() => handleDelete(Service._id) }>Delete</button>
+
+               <Link to="/shipping"><button style={{marginLeft: '15px', background: '#F39C12', padding: '8px 18px', color: '#fff', fontSize: '15px'}}>Order Now</button> </Link>
             </div>
         </div>
     );

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Form, Button} from 'react-bootstrap';
+import './Shipping.css'
 
 const Shipping = () => {
     return (
-        <div>
-            <Form> 
+        <div className="shipping-container p-5">
+            <h1 className="p-3" style={{color: '#28B463 '}}>Please Give Your Information</h1>
+            <Form className="from-container"> 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="text" placeholder="Enter Your Name" />   
                 </Form.Group>
@@ -20,7 +22,7 @@ const Shipping = () => {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="number" placeholder="Phone-Number" />   
                 </Form.Group>
-                <Button variant="warning">Place Order</Button>
+                <Button style={{padding: '10px 20px',fontSize: '20px' }} variant="warning">Pace Order</Button>
             </Form>
         </div>
     );
