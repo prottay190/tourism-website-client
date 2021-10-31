@@ -1,4 +1,5 @@
 import React  from 'react';
+import { Link } from 'react-router-dom';
 import Service from '../../Service/Service';
 import './Ourservices.css';
 
@@ -6,7 +7,7 @@ const OurService = ({os}) => {
      const {name, img, price, packages} = os;
 
      const handleDelete = id =>{
-        const url = `http://localhost:5000/services/${id}`;
+        const url = `https://thawing-escarpment-98208.herokuapp.com/services/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
@@ -30,6 +31,7 @@ const OurService = ({os}) => {
                <h5>Packages: {packages}</h5>
                <h3>Price: {price}</h3>
                <button onClick={() => handleDelete(Service._id) }>Delete</button>
+               <Link to="/shipping"> <button>Order Now</button> </Link>
             </div>
         </div>
     );

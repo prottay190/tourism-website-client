@@ -7,38 +7,50 @@ import Header from './Pages/Shared/Header/Header';
 import Footer from './Pages/Shared/Footer/Footer';
 import Details from './Pages/Details/Details';
 import Orders from './Pages/Orders/Orders';
-
+import SingIn from './Pages/SingIn/SingIn';
+import AuthProvider from './contaxt/AuthProvider';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import Shipping from './Pages/Shipping/Shipping';
 
 
 
 function App() {
   return (
     <div className="App">
-     <Router>
-       <Route>
-         <Header></Header>
-       </Route>
-       <Switch>
-         <Route exact path="/">
-           <Home></Home>
-         </Route>
-         <Route path="/home">
-           <Home></Home>
-         </Route>
-         <Route path="/addServices">
-             <AddServices></AddServices>
-         </Route>
-         <Route path="/detail/:serviceId">
-             <Details></Details>
-         </Route>
-         <Route path="/order">
-           <Orders></Orders>
-         </Route>
-       </Switch>
-       <Route>
-         <Footer></Footer>
-       </Route>
-     </Router>
+      <AuthProvider>
+
+        <Router>
+          <Route>
+            <Header></Header>
+          </Route>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/addServices">
+              <AddServices></AddServices>
+            </Route>
+            <Route path="/detail/:serviceId">
+              <Details></Details>
+            </Route>
+            <Route path="/order">
+              <Orders></Orders>
+            </Route>
+            <Route path="/login">
+              <SingIn></SingIn>
+            </Route>
+            <Route path="/shipping">
+              <Shipping></Shipping>
+            </Route>
+          </Switch>
+          <Route>
+            <Footer></Footer>
+          </Route>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

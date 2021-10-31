@@ -7,7 +7,7 @@ import './Orders.css'
 const Orders = () => {
     const [ourServices, setOurServices] = useState([]);
     useEffect(() =>{
-        fetch('http://localhost:5000/services')
+        fetch('https://thawing-escarpment-98208.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setOurServices(data))
     },[])
