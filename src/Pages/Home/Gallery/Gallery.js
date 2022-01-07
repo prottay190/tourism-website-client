@@ -17,38 +17,37 @@ const Gallery = () => {
             <h2> Our Photo Gallery</h2>
             <Container className="m-4">
                 <Row className="row-container m-4">
-                    <Col>
-                    <img src={img1} alt="" />
+                    <Col lg={4} md={5} sm={12}>
+                    <img src={img1} className='img-fluid' alt='Responsive image' />
                     </Col>
-                    <Col>
-                      <img src={img2} alt="" />
+                    <Col lg={4} md={5} sm={12}>
+                      <img src={img2} className='img-fluid' alt='Responsive image' />
                     </Col>
-                    <Col>
-                    <img src={img3} alt="" />
-                    </Col>
-                </Row>
-                <Row className="row-container m-4">
-                    <Col>
-                     <img src={img4} alt="" />
-                    </Col>
-                    <Col>
-                    <img src={img5} alt="" />
-                    </Col>
-                    <Col>
-                      <img src={img7} alt="" />
+                    <Col lg={4} md={5} sm={12}>
+                    <img src={img3} className='img-fluid' alt='Responsive image'/>
                     </Col>
                 </Row>
                 <Row className="row-container m-4">
-                    <Col>
-                    <img src={img8} alt="" />
+                    <Col lg={4} md={5} sm={12}>
+                     <img src={img4} className='img-fluid' alt='Responsive image' />
                     </Col>
-                    <Col>
-                     <img src={img6} alt="" />
+                    <Col lg={4} md={5} sm={12}>
+                    <img src={img5} className='img-fluid' alt='Responsive image'/>
+                    </Col>
+                    <Col lg={4} md={5} sm={12}>
+                      <img src={img7} className='img-fluid' alt='Responsive image'/>
+                    </Col>
+                </Row>
+                <Row className="row-container m-4">
+                    <Col lg={4} md={5} sm={12}>
+                    <img src={img8} className='img-fluid' alt='Responsive image' />
+                    </Col>
+                    <Col lg={4} md={5} sm={12}>
+                     <img src={img6} className='img-fluid' alt='Responsive image'/>
                     </Col>
                     <Col>
                     </Col>
                 </Row> 
-               
             </Container>
         </div>
     );
