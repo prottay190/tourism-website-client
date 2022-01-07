@@ -15,13 +15,10 @@ import MoreService from './Pages/MoreService/MoreService';
 import NotFound from './Pages/NotFound/NotFound';
 import Contact from './Pages/Contact/Contact';
 
-
-
 function App() {
   return (
     <div className="App">
       <AuthProvider>
-
         <Router>
           <Route>
             <Header></Header>
@@ -52,10 +49,10 @@ function App() {
               <MoreService></MoreService>
             </Route>
             <Route path="/contact">
-             <Contact></Contact>
+              <Contact></Contact>
             </Route>
             <Route path="*">
-             <NotFound></NotFound>
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Route>
