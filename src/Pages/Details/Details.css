@@ -1,6 +1,34 @@
 .details-Container{
-    padding: 20px;
-    border: 2px solid blueviolet;
-    background-color: rgb(83, 110, 112);
-    color: #fff;
+    padding: 60px;
+    background-color: #eceef4;
+     /*color: #fff;  */
+}
+.details-Container img{
+    width: 1000px; 
+    margin-bottom: 30px;
+    
+}
+.center{
+    display: block;
+}
+.details-Container h2{
+    font-size: 30px;
+    text-align: left;
+}
+.details-Container h5, h6{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.details-Container p{
+    text-align: left;
+    font-size: 20px;
+    line-height: 2.0em;
+}
+.details-btn{
+    padding: 10px 40px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    margin-top: 20px;
+    background-color: #CB4335 !important;
 }
