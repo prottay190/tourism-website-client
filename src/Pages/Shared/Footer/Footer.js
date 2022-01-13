@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer p-5">
             <Container>
                 <Row>
-                   <Col lg={4} md={6} sm={12}>
+                   <Col lg={4} md={6} sm={12} style={{textAlign: 'left'}}>
                        <h3>Traveling World</h3>
                        <p className="footer-text">It’s wonderful to travel—to meet new people, see new places, experience different cultures, live life the way life is lived somewhere else.</p>
                        <br />
@@ -19,7 +19,7 @@ const Footer = () => {
                        <small> <FaLinkedin style={{fontSize: '25px', marginLeft: '15px'}}/></small>
                       
                    </Col>
-                   <Col lg={4} md={6} sm={12}>
+                   <Col lg={4} md={6} sm={12} style={{textAlign: 'left'}}>
                        <h3>Latest Update</h3>
                        <div className="footer-text">
                            <h6><FaElementor /> Together We Can Do So Much</h6>
@@ -34,7 +34,7 @@ const Footer = () => {
                            <p>31 OCT 2021</p>
                        </div>
                    </Col>
-                   <Col lg={4} md={6} sm={12}>
+                   <Col lg={4} md={6} sm={12} style={{textAlign: 'left'}}>
                        <h3>Contact</h3>
                        <div className="footer-text">
                            <p>Our HotLIne: traveling.world@gmail.com</p>
