@@ -15,7 +15,7 @@ const Gallery = () => {
     return (
         <div className="gallery-container p-5">
             <h2> Our Photo Gallery</h2>
-            <Container className="m-4">
+            <Container className="p-4">
                 <Row className="row-container m-4">
                     <Col lg={4} md={5} sm={12}>
                     <img src={img1} className='img-fluid' alt='Responsive image' />

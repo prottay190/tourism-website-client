@@ -1,6 +1,6 @@
 .shipping-container{
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    background-color: #AAB7B8;
@@ -9,4 +9,11 @@
 .from-container input {
    width: 500px;
   
+}
+
+@media only screen and (max-width: 768px) {
+   .from-container input {
+      width: 300px;
+     
+   }
 }

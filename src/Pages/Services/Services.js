@@ -28,18 +28,3 @@ const Services = () => {
 };
 
 export default Services;
-
-
-
-
-{/* <Container className="services-section">
-<h2 style={{color: '#F39C12', padding: '20px'}}>Our Services</h2>
-<Row lg={3} md={2} sm={1} xs={1} className="g-4">
-    {
-        services.map(service => <Service
-            key={service._id}
-            service = {service}
-            ></Service>)
-    }
-</Row>
-</Container> */}
