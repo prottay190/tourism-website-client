@@ -1,9 +1,11 @@
-.os-container{
-    display: flex;
-    border-bottom: 1px solid lightgray;
-    margin-right: 5px;
-    padding: 25px;
-}
-.os-text{
+.single-services{
     margin: 20px;
+}
+.shipping-btn{
+    margin-right: 10px;
+    background-color: #F39C12;
+    padding: 8px 22px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
 }

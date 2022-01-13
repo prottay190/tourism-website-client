@@ -12,6 +12,8 @@ const Orders = () => {
         .then(data => setOurServices(data))
     },[])
     return (
+     <>
+     <h2 className='order p-5'>Most Valuable Services</h2>
        <div className="order-container">
             <div className="order-text">
             {
@@ -22,6 +24,7 @@ const Orders = () => {
             }
         </div>
        </div>
+     </>
     );
 };
 
